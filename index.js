@@ -168,10 +168,11 @@ Aşağıdaki işlemleri yapmak için indekseGoreFenomen işlevini kullanın:
 NOT: DÖNDÜĞÜNÜZ DİZİN YUKARIDAKİ BİÇİMLE EŞLEŞMESİ GEREKİR, YA DA TESTİ GEÇMEYECEKTİR!
 ÖRNEK: fenomenler dizisi ve 3 sayısı ile indekseGoreFenomen çağrılırsa, `3. indekste bulunan fenomen: Leo Messi' */
 
-function indekseGoreFenomen(/*kod*/) {
-  /*kod*/
+function indekseGoreFenomen(fenomenler, i) {
+  /*kod*/const gosterilecekBilgi = `${fenomenler.indexOf(fenomenler[i])}. indekste bulunan fenomen: ${fenomenler[i].profile}`;
+	return gosterilecekBilgi;
 }
-
+console.log(indekseGoreFenomen(fenomenler, 3));
 
 
 /*  Görev 4:
