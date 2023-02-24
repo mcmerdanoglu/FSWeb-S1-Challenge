@@ -183,10 +183,12 @@ Aşağıdakileri yapmak için profilListesi'ni kullanın:
 🌟 Dönüş ÖRNEĞİ: ["Instagram", "Cristiano Ronaldo", "Kylie"....]
 */
 
-function profilListesi(/*kod*/) {
-  /*kod*/
+function profilListesi(fenomenler) {
+  /*kod*/ const profiller = [];
+  for (let i=0;i<fenomenler.length;i++) {profiller.push(fenomenler[i].profile)}
+  return profiller;
 }
-
+console.log(profilListesi(fenomenler));
 
 
 /* Görev 5:
