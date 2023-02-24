@@ -204,6 +204,7 @@ function fenomenSil(fenomenler, i) {
   /*kod*/ const yeniFenomenler = [... fenomenler];
   yeniFenomenler.splice(yeniFenomenler[i],1);
   return yeniFenomenler;
+
 }
 console.log(fenomenSil(fenomenler,0));
 
@@ -225,10 +226,13 @@ Aşağıdakileri yapmak için fenomenEkle'i kullanın:
 
 ÖRNEK: fenomenEkle(fenomenler, 6, "Workintech", 10000000, 2022, "Instagram") çağrıldığında dizinin sonuna yukarıdaki nesne en sona eklenerek yeni fenomenler dizisini döndürmelidir. */
 
-function fenomenEkle(/*kod*/) {
-  /*kod*/
+function fenomenEkle(fenomenler, number, profile, followers, posts, platform) {
+  /*kod*/ const eklenenFenomenler = [... fenomenler];
+  const eklenenFenomen = {"number": number, "profile": profile, "followers": followers, "posts": posts, "platform": platform};
+  eklenenFenomenler.push(eklenenFenomen);
+  return eklenenFenomenler;
 }
-
+console.log(fenomenEkle(fenomenler, 6, "Workintech", 10000000, 2022, "Instagram"))
 
 /* Görev 7:
 Aşağıdakileri yapmak için enFenomenler'yi kullanın:
